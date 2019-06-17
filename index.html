@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Wiki Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <img id="wikipedia-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/526px-Wikipedia-logo-v2.svg.png">
+      
+      <div id="form-content">
+        <form id="searchForm">
+          <input type="search" id="searchInput" required placeholder="Search Wikipedia" autocomplete="off">
+          <button type="submit" id="submitButton" style="font-size: 30px; margin-right: 3px;"><i class="fa fa-search"></i></button>
+        </form>
+        <div>
+          <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><button id="randomSearchBtn">Go to random Wiki</button></a>
+        </div>
+      </div>
+    </div>
+
+    <ul id="pageList"></ul>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
